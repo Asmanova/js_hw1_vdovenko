@@ -5,6 +5,11 @@ var result;
 function pow(num, degr) {
   var res = num;
 
+  while (degr % 1 != 0) {
+    alert ('Число в степени должно быть целым');
+    degr = prompt ('Введите число');
+  }
+  
   if (degr == 0) {
     res = 1;
   } else if (degr < 0) {
